@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Nagre Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Salsa&display=swap" 
+    rel="stylesheet">
+</head>
+<body>
+	<header class="main-header">
+	  	<nav class="main-nav">
+		    <div class="main-nav__title">
+	        	<h1 class="heading-1"> <span class="u-accent-color"><a href="../index.html"><img class="logo" src="./img/nagre.png" alt=""></a><span></h1>
+	        	<!-- <h2 class="heading-2">Front-End Developer <strong class="u-accent-color"></strong></h2> -->
+		    </div>
+    	    <a href="#" class="main-nav__link main-nav__block main-nav__block--about modal-trigger" data-modal="modal-about">
+    	        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="icon">
+    	           <path d="M9 11.75c-.69 0-1.25.56-1.25 1.25s.56 1.25 1.25 1.25 1.25-.56 1.25-1.25-.56-1.25-1.25-1.25zm6 0c-.69 0-1.25.56-1.25 1.25s.56 1.25 1.25 1.25 1.25-.56 1.25-1.25-.56-1.25-1.25-1.25zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8 0-.29.02-.58.05-.86 2.36-1.05 4.23-2.98 5.21-5.37C11.07 8.33 14.05 10 17.42 10c.78 0 1.53-.09 2.25-.26.21.71.33 1.47.33 2.26 0 4.41-3.59 8-8 8z"/>
+    	        </svg>
+    	        <h3 class="heading-3">About</h3>
+    	    </a>
+	        <div class="main-nav__block main-nav__block-pic main-nav__block-pic--1">   
+            </div>
+    	    <a href="#" class="main-nav__link main-nav__block main-nav__block--skills modal-trigger" data-modal="modal-skills">
+    	        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="icon">
+    	           <path fill="none" d="M0 0h24v24H0V0z"/>
+    	           <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/>
+    	       </svg>
+    	      <h3 class="heading-3">Skills</h3>
+    	    </a>
+    	    <a href="#" class="main-nav__link main-nav__block main-nav__block--portfolio modal-trigger" data-modal="modal-portfolio">
+    	        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="icon">
+    	           <path fill="none" d="M0 0h24v24H0V0z"/>
+    	           <path d="M23 11.01L18 11c-.55 0-1 .45-1 1v9c0 .55.45 1 1 1h5c.55 0 1-.45 1-1v-9c0-.55-.45-.99-1-.99zM23 20h-5v-7h5v7zM20 2H2C.89 2 0 2.89 0 4v12c0 1.1.89 2 2 2h7v2H7v2h8v-2h-2v-2h2v-2H2V4h18v5h2V4c0-1.11-.9-2-2-2zm-8.03 7L11 6l-.97 3H7l2.47 1.76-.94 2.91 2.47-1.8 2.47 1.8-.94-2.91L15 9h-3.03z"/>
+    	        </svg>
+    	      <h3 class="heading-3">Projects</h3>
+    	    </a>
+	        <div class="main-nav__block main-nav__block-pic main-nav__block-pic--2">   
+            </div>
+	        <div class="main-nav__block main-nav__block-pic main-nav__block-pic--3">   
+            </div>
+	        <a href="#" class="main-nav__link main-nav__block main-nav__block--facts modal-trigger" data-modal="modal-facts">
+	           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="icon">
+	               <path d="M17.81 4.47c-.08 0-.16-.02-.23-.06C15.66 3.42 14 3 12.01 3c-1.98 0-3.86.47-5.57 1.41-.24.13-.54.04-.68-.2-.13-.24-.04-.55.2-.68C7.82 2.52 9.86 2 12.01 2c2.13 0 3.99.47 6.03 1.52.25.13.34.43.21.67-.09.18-.26.28-.44.28zM3.5 9.72c-.1 0-.2-.03-.29-.09-.23-.16-.28-.47-.12-.7.99-1.4 2.25-2.5 3.75-3.27C9.98 4.04 14 4.03 17.15 5.65c1.5.77 2.76 1.86 3.75 3.25.16.22.11.54-.12.7-.23.16-.54.11-.7-.12-.9-1.26-2.04-2.25-3.39-2.94-2.87-1.47-6.54-1.47-9.4.01-1.36.7-2.5 1.7-3.4 2.96-.08.14-.23.21-.39.21zm6.25 12.07c-.13 0-.26-.05-.35-.15-.87-.87-1.34-1.43-2.01-2.64-.69-1.23-1.05-2.73-1.05-4.34 0-2.97 2.54-5.39 5.66-5.39s5.66 2.42 5.66 5.39c0 .28-.22.5-.5.5s-.5-.22-.5-.5c0-2.42-2.09-4.39-4.66-4.39-2.57 0-4.66 1.97-4.66 4.39 0 1.44.32 2.77.93 3.85.64 1.15 1.08 1.64 1.85 2.42.19.2.19.51 0 .71-.11.1-.24.15-.37.15zm7.17-1.85c-1.19 0-2.24-.3-3.1-.89-1.49-1.01-2.38-2.65-2.38-4.39 0-.28.22-.5.5-.5s.5.22.5.5c0 1.41.72 2.74 1.94 3.56.71.48 1.54.71 2.54.71.24 0 .64-.03 1.04-.1.27-.05.53.13.58.41.05.27-.13.53-.41.58-.57.11-1.07.12-1.21.12zM14.91 22c-.04 0-.09-.01-.13-.02-1.59-.44-2.63-1.03-3.72-2.1-1.4-1.39-2.17-3.24-2.17-5.22 0-1.62 1.38-2.94 3.08-2.94 1.7 0 3.08 1.32 3.08 2.94 0 1.07.93 1.94 2.08 1.94s2.08-.87 2.08-1.94c0-3.77-3.25-6.83-7.25-6.83-2.84 0-5.44 1.58-6.61 4.03-.39.81-.59 1.76-.59 2.8 0 .78.07 2.01.67 3.61.1.26-.03.55-.29.64-.26.1-.55-.04-.64-.29-.49-1.31-.73-2.61-.73-3.96 0-1.2.23-2.29.68-3.24 1.33-2.79 4.28-4.6 7.51-4.6 4.55 0 8.25 3.51 8.25 7.83 0 1.62-1.38 2.94-3.08 2.94s-3.08-1.32-3.08-2.94c0-1.07-.93-1.94-2.08-1.94s-2.08.87-2.08 1.94c0 1.71.66 3.31 1.87 4.51.95.94 1.86 1.46 3.27 1.85.27.07.42.35.35.61-.05.23-.26.38-.47.38z"/>
+	               <path fill="none" d="M0 0h24v24H0z"/>
+	           </svg>
+	           <h3 class="heading-3">Facts</h3>
+	        </a>
+	        <div class="main-nav__block main-nav__block-pic main-nav__block-pic--4">   
+            </div>
+	        <div class="main-nav__block main-nav__block-pic main-nav__block-pic--5">   
+            </div>
+	        <a href="#" class="main-nav__link main-nav__block main-nav__block--contact modal-trigger" data-modal="modal-contact">
+	            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+	               <path fill="none" d="M0 0h24v24H0z"/>
+	               <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V8l8 5 8-5v10zm-8-7L4 6h16l-8 5z"/>
+	            </svg>
+	            <h3 class="heading-3">Contact</h3>
+	        </a>
+	        <div class="main-nav__block main-nav__block-pic main-nav__block-pic--6">   
+            </div>
+            <div class="main-nav__block main-nav__contacts">
+                <a href="https://github.com/vaibhav-nagre" target="_blank" class="svg-icon-link">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                        <title>github</title>
+                        <path d="M16 0.395c-8.836 0-16 7.163-16 16 0 7.069 4.585 13.067 10.942 15.182 0.8 0.148 1.094-0.347 1.094-0.77 0-0.381-0.015-1.642-0.022-2.979-4.452 0.968-5.391-1.888-5.391-1.888-0.728-1.849-1.776-2.341-1.776-2.341-1.452-0.993 0.11-0.973 0.11-0.973 1.606 0.113 2.452 1.649 2.452 1.649 1.427 2.446 3.743 1.739 4.656 1.33 0.143-1.034 0.558-1.74 1.016-2.14-3.554-0.404-7.29-1.777-7.29-7.907 0-1.747 0.625-3.174 1.649-4.295-0.166-0.403-0.714-2.030 0.155-4.234 0 0 1.344-0.43 4.401 1.64 1.276-0.355 2.645-0.532 4.005-0.539 1.359 0.006 2.729 0.184 4.008 0.539 3.054-2.070 4.395-1.64 4.395-1.64 0.871 2.204 0.323 3.831 0.157 4.234 1.026 1.12 1.647 2.548 1.647 4.295 0 6.145-3.743 7.498-7.306 7.895 0.574 0.497 1.085 1.47 1.085 2.963 0 2.141-0.019 3.864-0.019 4.391 0 0.426 0.288 0.925 1.099 0.768 6.354-2.118 10.933-8.113 10.933-15.18 0-8.837-7.164-16-16-16z"></path>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/vaibhav-nagre-93b71317b/" target="_blank" class="svg-icon-link">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                        <title>linkedin</title>
+                        <path d="M29 0h-26c-1.65 0-3 1.35-3 3v26c0 1.65 1.35 3 3 3h26c1.65 0 3-1.35 3-3v-26c0-1.65-1.35-3-3-3zM12 26h-4v-14h4v14zM10 10c-1.106 0-2-0.894-2-2s0.894-2 2-2c1.106 0 2 0.894 2 2s-0.894 2-2 2zM26 26h-4v-8c0-1.106-0.894-2-2-2s-2 0.894-2 2v8h-4v-14h4v2.481c0.825-1.131 2.087-2.481 3.5-2.481 2.488 0 4.5 2.238 4.5 5v9z"></path>
+                    </svg>
+                </a>
+            </div>
+	    </nav>
+	</header>
+    <main>
+        <!-- modal about -->
+        <div class="modal" id="modal-about">
+            <div class="modal__content">
+                <h3 class="modal__heading">
+                    About
+                </h3>
+                <div class="modal-about">
+                    <div class="modal-about--first-page">
+                        <h2 class="modal-about__heading-big">
+                            Vaibhav<br>
+                            Nagre
+                        </h2>
+                        <div class="modal-about__line"></div>
+                        <h4>Computer Scientist</h4>
+                        <h5>concentration in Software Engineer</h5>
+                        <div class="modal-about__line"></div>
+                        <h5>currently learning to become</h5>
+                        <h2 class="modal-about__heading-big">
+                            Front-end<br>
+                            developer
+                        </h2>
+                        <button class="btn-full btn-more">read more...</button>
+                        <div class="modal-about__buttons-list">
+                            <a href="docs/nagre_resume.pdf" target="_blank">CV</a>
+                            <a href="https://www.linkedin.com/in/vaibhav-nagre-93b71317b/" target="_blank">Linked in</a>
+                            <a href="https://github.com/vaibhav-nagre" target="_blank">Github</a>
+                        </div>
+                    </div>
+                    <div class="modal-about--second-page u-hide">
+                        <h2 class="modal-about__heading-big">
+                            Vaibhav Nagre
+                        </h2>
+                        <div>
+                            <div class="modal-about__profile-pic"></div>
+                            <p>Hi.<br>
+                                My name is Vaibhav Nagre. I am a Senior at California State University, Monterey Bay majoring in Computer Science with concentration in Software Engineering.
+                            </p>
+                            <p>At the beginning of my Junior year I finally fully commited to learning front-end development. Day by day I've been getting to know HTML, CSS and JavaScript. 
+                                Then came bootstrap, saas and some jquery. JavaScript was the toughest part for me and still is as so far I've only grasped few of js libraries. 
+                                I am focusing on React js and building my portfolio by creating some React projects.
+                            </p>
+                            <p>
+                                I created this website to present my current skills and examples of my code, which could possibly help me find my first job as a junior front-end developer.
+                            </p>
+                        </div>     
+                        <button class="btn-full btn-less">read less...</button>
+                        <div class="modal-about__buttons-list">
+                            <a href="docs/nagre_resume.pdf" target="_blank">CV</a>
+                            <a href="https://www.linkedin.com/in/vaibhav-nagre-93b71317b/" target="_blank">Linked in</a>
+                        </div>
+                    </div>
+                </div> <!--end modal box-->
+            </div><!--end modal content-->
+            <button class="modal__close">X</button>
+        </div> <!--end modal-->
+
+        <!-- modal portfolio -->
+        <div class="modal" id="modal-portfolio">
+            <div class="modal__content">
+                <h3 class="modal__heading">
+                    Projects
+                </h3>
+                <div class="modal-portfolio">
+                    <div class="modal-portfolio__item">
+                        <div class="modal-portfolio__num">01</div>
+                        <div class="modal-portfolio__project">
+                            <h3 class="heading-3">
+                                <a href="https://vaibhav-nagre.github.io/SeeFood-Web-Application/" target="_blank">Restaurant Finder - Capstone Project</a>
+                            </h3>
+                            <h4 class="heading-4">HTML / Bootstrap / JAVASCRIPT / PHP / SQL / CSS GRID</h4>
+                            <p>SeeFood Web Application</p>  
+                        </div>    
+                    </div>
+                    <div class="modal-portfolio__item">
+                        <div class="modal-portfolio__num">02</div>
+                        <div class="modal-portfolio__project">
+                            <h3 class="heading-3">
+                                <a href="https://vaibhav-nagre.github.io/Google-Keep-Clone/" target="_blank">Google Keep Clone</a>
+                            </h3>
+                            <h4 class="heading-4">React</h4>
+                            <p>It will look similar to official Google Keep application.</p>  
+                        </div>    
+                    </div>
+                    <div class="modal-portfolio__item">
+                        <div class="modal-portfolio__num">03</div>
+                        <div class="modal-portfolio__project">
+                            <h3 class="heading-3">
+                                <a href="https://nagre-todolist-mongodb.herokuapp.com/" target="_blank">TODO List</a>
+                            </h3>
+                            <h4 class="heading-4">HTML / CSS / Javascript / Express Js / EJS</h4>
+                            <p>You can add or delete a TODO. The Database will be reflected in mongoDB. </p>  
+                        </div>    
+                    </div>
+                    <div class="modal-portfolio__item">
+                        <div class="modal-portfolio__num">04</div>
+                        <div class="modal-portfolio__project">
+                            <h3 class="heading-3">
+                                <a href="https://republic-of-dombivli-coders.github.io/covid19-india-map/" target="_blank">COVID-19 India Map</a>
+                            </h3>
+                            <h4 class="heading-4">HTML / CSS / Javascript / API</h4>
+                            <p>The Map will display the live COVID-19 cases in India. It will also display the data of each state by hovering on the map. The data is requested using API. </p>  
+                        </div>    
+                    </div>
+                    <div class="modal-portfolio__item">
+                        <div class="modal-portfolio__num">05</div>
+                        <div class="modal-portfolio__project">
+                            <h3 class="heading-3">
+                                <a href="https://nagre-blog-website.herokuapp.com/" target="_blank">Blog Website</a>
+                            </h3>
+                            <h4 class="heading-4">HTML / CSS / Javascript / Express Js / EJS</h4>
+                            <p>You can Compose a new Blog with a proper title and content. </p>  
+                        </div>    
+                    </div>
+                    <div class="modal-portfolio__item">
+                        <div class="modal-portfolio__num">06</div>
+                        <div class="modal-portfolio__project">
+                            <h3 class="heading-3">
+                                <a href="https://nagre-news-letter-signup.herokuapp.com/" target="_blank">Newsletter SignUp</a>
+                            </h3>
+                            <h4 class="heading-4">HTML / CSS / NodeJs / Express JS/ API / HTTPS</h4>
+                            <p>Server based newsletter created using Mailchimp's API to store the data.</p>  
+                        </div>    
+                    </div>
+                    <div class="modal-portfolio__item">
+                        <div class="modal-portfolio__num">07</div>
+                        <div class="modal-portfolio__project">
+                            <h3 class="heading-3">
+                                <a href="https://vaibhav-nagre.github.io/Comment-Box/" target="_blank">Add Comment</a>
+                            </h3>
+                            <h4 class="heading-4">HTML / CSS / Vanilla Javascript</h4>
+                            <p>Your name & comment will be posted. It will also display the time of posting.</p>  
+                        </div>    
+                    </div>
+                    <div class="modal-portfolio__item">
+                        <div class="modal-portfolio__num">08</div>
+                        <div class="modal-portfolio__project">
+                            <h3 class="heading-3">
+                                <a href="https://vaibhav-nagre.github.io/basic-calculator/" target="_blank">Calculator</a>
+                            </h3>
+                            <h4 class="heading-4">HTML / CSS / JAVASCRIPT </h4>
+                            <p>Basic Calculator created using HTML, CSS & Javascript to perform basic Arithmetic operations.</p>  
+                        </div>    
+                    </div>
+                    <div class="modal-portfolio__item">
+                        <div class="modal-portfolio__num">09</div>
+                        <div class="modal-portfolio__project">
+                            <h3 class="heading-3">
+                                <a href="https://vaibhav-nagre.github.io/hex-code-generator/" target="_blank">Hex Color Code Generator</a>
+                            </h3>
+                            <h4 class="heading-4">HTML / CSS / JAVASCRIPT </h4>
+                            <p>It will generate random Hex color code.</p>  
+                        </div>    
+                    </div>    
+                </div> <!--end modal portfolio-->
+            </div><!--end modal content -->
+            <button class="modal__close">X</button>
+        </div> <!--end modal-->
+
+        <!-- modal skills -->
+        <div class="modal" id="modal-skills">
+            <div class="modal__content">
+                <h3 class="modal__heading">
+                    Skills
+                </h3>
+                <div class="modal-skills">
+                    <p>Thats how my current skill set looks like now.</p>
+                    <div class="modal-skills__container">
+                        <div class="modal-skills__box">
+                            <div class="modal-skills__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="modal-skills__svg-main-icon">
+                                   <path fill="none" d="M0 0h24v24H0V0z"/>
+                                   <path d="M23 11.01L18 11c-.55 0-1 .45-1 1v9c0 .55.45 1 1 1h5c.55 0 1-.45 1-1v-9c0-.55-.45-.99-1-.99zM23 20h-5v-7h5v7zM20 2H2C.89 2 0 2.89 0 4v12c0 1.1.89 2 2 2h7v2H7v2h8v-2h-2v-2h2v-2H2V4h18v5h2V4c0-1.11-.9-2-2-2zm-8.03 7L11 6l-.97 3H7l2.47 1.76-.94 2.91 2.47-1.8 2.47 1.8-.94-2.91L15 9h-3.03z"/>
+                                </svg>
+                                <h3 class="heading-3">Visual side</h3>
+                            </div>
+                            
+                            <div class="line"></div>
+                            <div class="modal-skills__skills-icons">
+                                <img src="img/prog-lang/html5-original.svg" alt="html5 icon">
+                                <img src="img/prog-lang/css3-original.svg" alt="css3 icon">
+                                <img src="img/prog-lang/photoshop-plain.svg" alt="photoshop icon">
+                            </div>
+                            <h4 class="heading-4">
+                                PSD 2 HTML
+                            </h4>
+                            <h4 class="heading-4">
+                                Responsive websites
+                            </h4>
+                            <h4 class="heading-4">
+                                HTML emails
+                            </h4>
+                        </div><!--end of skills box-->
+                        <div class="modal-skills__box">
+                            <div class="modal-skills__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="modal-skills__svg-main-icon">
+                                   <path fill="none" d="M0 0h24v24H0V0z"/>
+                                   <path d="M23 11.01L18 11c-.55 0-1 .45-1 1v9c0 .55.45 1 1 1h5c.55 0 1-.45 1-1v-9c0-.55-.45-.99-1-.99zM23 20h-5v-7h5v7zM20 2H2C.89 2 0 2.89 0 4v12c0 1.1.89 2 2 2h7v2H7v2h8v-2h-2v-2h2v-2H2V4h18v5h2V4c0-1.11-.9-2-2-2zm-8.03 7L11 6l-.97 3H7l2.47 1.76-.94 2.91 2.47-1.8 2.47 1.8-.94-2.91L15 9h-3.03z"/>
+                                </svg>
+                                <h3 class="heading-3">Functional side</h3>
+                            </div>
+                            
+                            <div class="line"></div>
+                            <div class="modal-skills__skills-icons">
+                                <img src="img/prog-lang/javascript-original.svg" alt="html5 icon">
+                                <img src="img/prog-lang/jquery-original-wordmark.svg" alt="css3 icon">
+                                <img src="img/prog-lang/react.svg" alt="react icon">
+                            </div>
+                            <h4 class="heading-4">
+                                JAVASCRIPT
+                            </h4>
+                            <p>
+                                functions, objects, DOM manipulation, jQuery.
+                            </p>
+                            <h4 class="heading-4">
+                                React js
+                            </h4>
+                            <p>Learning and creating projects in React js</p>
+                        </div><!--end of skills box-->
+                        <div class="modal-skills__box">
+                            <div class="modal-skills__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="modal-skills__svg-main-icon">
+                                   <path fill="none" d="M0 0h24v24H0V0z"/>
+                                   <path d="M23 11.01L18 11c-.55 0-1 .45-1 1v9c0 .55.45 1 1 1h5c.55 0 1-.45 1-1v-9c0-.55-.45-.99-1-.99zM23 20h-5v-7h5v7zM20 2H2C.89 2 0 2.89 0 4v12c0 1.1.89 2 2 2h7v2H7v2h8v-2h-2v-2h2v-2H2V4h18v5h2V4c0-1.11-.9-2-2-2zm-8.03 7L11 6l-.97 3H7l2.47 1.76-.94 2.91 2.47-1.8 2.47 1.8-.94-2.91L15 9h-3.03z"/>
+                                </svg>
+                                <h3 class="heading-3">Tools</h3>
+                            </div>
+                            
+                            <div class="line"></div>
+                            <div class="modal-skills__skills-icons">
+                                <img src="img/prog-lang/git-original.svg" alt="git icon">
+                                <img src="img/prog-lang/github-original.svg" alt="github icon">
+                                <img src="img/prog-lang/sass-original.svg" alt="sass icon">
+                                <img src="img/prog-lang/wordpress-plain.svg" alt="wordpress icon">
+                                <strong class="heading-1">NPM</strong>
+                                <strong class="heading-1">BEM</strong>
+                            </div>
+                            <h4 class="heading-4">
+                                Wordpress
+                            </h4>
+                            <p>building websites based on ready themes</p>
+                        </div><!--end of skills box-->
+                    </div>
+                </div> <!--end modal skills-->
+            </div><!--end modal content-->
+            <button class="modal__close">X</button>
+        </div> <!--end modal window skills-->
+
+        <!-- modal facts -->
+        <div class="modal" id="modal-facts">
+            <div class="modal__content">
+                <h3 class="modal__heading">
+                    Facts
+                </h3>
+                <div class="modal-facts">
+                    <ul class="modal-facts__list">
+                        <li class="modal-facts__list-item">
+                            Have been learning Javascript for 2 years!
+                        </li>
+                        <li class="modal-facts__list-item">
+                            Works hard to become front-end developer
+                        </li>
+                        <li class="modal-facts__list-item">
+                            I like Photography and prefer Roadtrip.
+                        </li>
+                        <li class="modal-facts__list-item">
+                            Loves to travel, often combines it with beaches.
+                        </li>
+                        <li class="modal-facts__list-item">
+                            Favourite cities: Los Angeles & Mumbai.
+                        </li>
+                        <li class="modal-facts__list-item">
+                            Favourite tv show: F.R.I.E.N.D.S
+                        </li>
+                    </ul>
+                    
+                </div> <!--end modal skills-->
+            </div><!--end modal content-->
+            <button class="modal__close">X</button>
+        </div> <!--end modal window skills-->
+
+        <!-- modal contact -->
+        <div class="modal" id="modal-contact">
+            <div class="modal__content">
+                <h3 class="modal__heading">
+                    Contact
+                </h3>
+                <div class="modal-contact">
+                    <h3 class="heading-3">Vaibhav Nagre</h3>
+                    <div class="modal-contact__data">
+                        <div>
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 32 32">
+                                <title>phone</title>
+                                <path d="M22 20c-2 2-2 4-4 4s-4-2-6-4-4-4-4-6 2-2 4-4-4-8-6-8-6 6-6 6c0 4 4.109 12.109 8 16s12 8 16 8c0 0 6-4 6-6s-6-8-8-6z"></path>
+                            </svg>
+                            <a href="tel:+1 8318848667">+1 831-884-8667</a>
+                        </div>
+                        <div>
+                            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                               <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V8l8 5 8-5v10zm-8-7L4 6h16l-8 5z"/>
+                            </svg>
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=vnagre@csumb.edu" href="mailto:vnagre@csumb.edu" target="_blank">vnagre@csumb.edu</a>
+                        </div>
+                    </div>
+                    <form id="form" class="form" action="mailto:vnagre@csumb.edu" method="post" enctype="text/plain">
+                        <div class="form__group">
+                            <input type="text" placeholder="Topic" id="topic" name="topic" class="form__input" required>
+                            <label for="topic" class="form__label">Topic</label>
+                        </div>
+                        <div class="form__group">
+                            <input type="email" id="email" placeholder="E-mail" name="email" class="form__input" required>
+                            <label for="email" class="form__label">E-mail</label>
+                        </div>
+                        <div class="form__group">
+                            <textarea id="message" placeholder="Message..." name="message" class="form__textarea" required></textarea>
+                            <label for="message" class="form__label">Message</label>
+                        </div>
+                        <input type="submit" value="Send" class="btn-full">
+                        <span id="status" class="form__status"></span>
+                    </form>
+                    
+                </div> <!--end modal skills-->
+            </div><!--end modal content-->
+            <button class="modal__close">X</button>
+        </div> <!--end modal window skills-->
+
+        <div class="modal__overlay"></div>
+    </main>
+    <footer>
+      
+    </footer>
+			
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0"></script>
+			
+    <script src="js/modalWindowTransition.js"></script>
+    <script src="js/form.js"></script>
+</body>
+</html>
